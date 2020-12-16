@@ -1,0 +1,99 @@
+/*No modificar*/
+body {
+  font-family: Arial, sans-serif;
+  width: 940px;
+  margin: 5% auto;
+  min-height: 100%;
+  background-image: url(../images/adventure.jpg);
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+li {
+  padding: 5px 0;
+  animation: fadein 5s;
+  list-style: none;
+  font-size: 70%;
+}
+li::before {
+  content: "• ";
+  color: #EC6778;
+}
+
+.col-40 h1 {
+  font-size: 20px;
+  color: #E84A5F;
+}
+
+.col-40, .col-60 {
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+
+}
+.col-40 {
+  width:40%;
+  background: #c1f6e7;
+  padding: 30px;
+  color: #000;
+  border: 3px solid black;
+
+}
+
+.col-60 {
+  width: 60%;
+  background: black;
+}
+
+#flecha{
+  font-size: 60px;
+}
+
+.texto-centrado {
+  text-align: center;
+  width: 40%;
+  padding-top: 3%;
+}
+
+#juego div {
+  text-align: center;
+  animation: fadein 2s;
+}
+
+#juego {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#imgfinal{
+  border: 3px solid black;
+}
+
+.piezas{
+  width: 33%;
+  box-sizing: border-box;
+  padding: 0;
+  border: 2px solid black;
+  /* float: left;*/
+
+}
+
+img{
+  width: 100%;
+  height: 46.5%;
+}
+#titulo{
+  font-size: 250%;
+  font-style: bold;
+}
+.titulosint{
+  font-size: 125%;
+  padding-top: 3%;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
